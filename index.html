@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ivan's Address Book</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Ivan's Address Book</h1>
+
+    <!-- Search bar -->
+    &#128270; <input id="searchBar" type="text" placeholder="Type to search" />
+
+    <!-- Table head -->
+    <table>
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Phone number</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+
+      <!-- Existing contacts -->
+      <tbody id="contactsTableBody">
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Hilda</td>
+          <td>Rothman</td>
+          <td>+358 50 527835</td>
+          <td>Balmes 202</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Kacey</td>
+          <td>Starnes</td>
+          <td>+1 202-918-2132</td>
+          <td>2000 Broadway</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Nancy</td>
+          <td>Mitchell</td>
+          <td>+374 33 351304</td>
+          <td>Carrer Joan Maragall, 10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Add a new contact</h1>
+    <form>
+      <input type="text" id="firstName" placeholder="First name" />
+      <input type="text" id="lastName" placeholder="Last name" />
+      <input type="text" id="number" placeholder="Phone number" />
+      <input type="text" id="address" placeholder="Address" />
+      <br /><input type="button" id="addContact" value="Add contact" />
+    </form>
+
+    <h1>Delete contacts</h1>
+    <button id="deleteContacts">Delete selected contacts</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  background: #2f343e;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  color: whitesmoke;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+h1 {
+  margin: 8px;
+}
+
+input,
+button {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+table {
+  width: 100%;
+  margin: 16px 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+
+/* Hover effects */
+
+button,
+input[type=button] {
+	cursor: pointer;
+}
+
+#addContact:hover {
+	background-color: lightgreen;
+}
+
+#deleteContacts:hover {
+	background-color: pink;
+}
